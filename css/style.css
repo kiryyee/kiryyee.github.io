@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+hr {
+    margin: 20px auto;
+    width: 60%;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+a {
+    padding: 10px 16px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+.card {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px #0002;
+}
+
+.avatar {
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        margin: 20px auto;
+        padding: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+.dark-theme {
+    background-color: #171717;
+    color: white;
+}
+
+.dark-theme .card {
+    background-color: #242424;
+}
+
+.dark-theme a {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.dark-theme a:hover {
+    background-color: #ddd;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 3px 10px #0003;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    transform: translateY(-2px);
+}
+
+.dark-theme #theme-toggle {
+    background-color: #111;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:focus-visible,
+#theme-toggle:focus-visible {
+    outline: 3px solid #86b4ff;
+    outline-offset: 3px;
+}
