@@ -6,27 +6,50 @@
     <title>kiry | Links</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/jpeg" href="images/0906ffc488c60387af53022ab4e858ea.jpg">
+    <script src="https://kit.fontawesome.com/64c4c6702a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="welcome-screen">
+  <button id="enter-button">click to enter...</button>
+    </div>
+    <video id="background-video" muted loop playsinline preload="auto">
+        <source src="media/intro.mp4" type="video/mp4">
+    </video>
+    <div id="sound-control">
+  <button id="sound-button" type="button" aria-label="Выключить звук">
+  <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+    <path class="sound-waves" d="M15 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"></path>
+  </svg>
+</button>
+  <input
+    id="volume-slider"
+    type="range"
+    min="0"
+    max="1"
+    step="0.01"
+    value="0.25"
+    aria-label="volume"
+  >
+</div>
     <main class="card">
     <img class="avatar" src="images/0906ffc488c60387af53022ab4e858ea.jpg" alt="photo kiry">
     <button id="theme-toggle">Dark Theme</button>
     <h1>kiry</h1>
     <hr>
-    <p>yoo, i am kiry. i am 17 yrs old and i study programming.<br>rn i am learning HTML, CSS, and JavaScript. in the future i want to start learning python.<br> also im better than u in deadlock </p>
+    <p>yoo, i am kiry. im a student who studies programming.<br>rn i am learning HTML, CSS, and JavaScript. in the future i want to start learning python.<br> also im better than u in deadlock </p>
     <h2>My Links</h2>
     <nav class="links" aria-label="My social links">
-    <a href="https://www.youtube.com/@kiryye" target="_blank" rel="noopener noreferrer">YouTube</a>
-    <a href="https://www.instagram.com/kiryyee/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://www.twitch.tv/mashirokaifarik" target="_blank" rel="noopener noreferrer">Twitch</a>
-    <a href="https://telegram.me/kiryyee" target="_blank" rel="noopener noreferrer">Telegram</a> 
-    <a href="https://www.tiktok.com/@kiryyee" target="_blank" rel="noopener noreferrer">TikTok</a>
-    <a href="https://steamcommunity.com/profiles/76561199116276102/" target="_blank" rel="noopener noreferrer">Steam</a>
-    <a href="https://ko-fi.com/kiryyee" target="_blank" rel="noopener noreferrer">Ko-fi</a>
-    <a href="https://open.spotify.com/user/31ctf4xzzs6triqp36zz5ifpap74?si=e49a4d81c8424a2b" target="_blank" rel="noopener noreferrer">Spotify</a>
-    <a href="https://music.apple.com/profile/holy1" target="_blank" rel="noopener noreferrer">Apple Music</a>
-    <a href="https://steamcommunity.com/tradeoffer/new/?partner=1156010374&token=GO-AT_wQ" target="_blank" rel="noopener noreferrer">Trade-Link</a>
+    <a href="https://www.youtube.com/@kiryye" target="_blank" rel="noopener noreferrer" aria-label="Youtube" title="Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/kiryyee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.twitch.tv/mashirokaifarik" target="_blank" rel="noopener noreferrer"aria-label="Twitch" title="Twitch"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+    <a href="https://telegram.me/kiryyee" target="_blank" rel="noopener noreferrer"aria-label="Telegram" title="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a> 
+    <a href="https://www.tiktok.com/@kiryyee" target="_blank" rel="noopener noreferrer"aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+    <a href="https://steamcommunity.com/profiles/76561199116276102/" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam"><i class="fa-brands fa-steam" aria-hidden="true"></i></a>
+    <a href="https://ko-fi.com/kiryyee" target="_blank" rel="noopener noreferrer"aria-label="Kofi" title="Ko-fi"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a>
+    <a href="https://open.spotify.com/user/31ctf4xzzs6triqp36zz5ifpap74?si=e49a4d81c8424a2b" target="_blank" rel="noopener noreferrer" aria-label="Spotify" title="Spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
+    <a href="https://music.apple.com/profile/holy1" target="_blank" rel="noopener noreferrer"aria-label="Apple Music" title="Apple Music"><i class="fa-brands fa-apple" aria-hidden="true"></i></a>
+    <a href="https://steamcommunity.com/tradeoffer/new/?partner=1156010374&token=GO-AT_wQ" target="_blank" rel="noopener noreferrer"aria-label="Trade Link" title="Trade Link"><i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i></a>
     </nav>
     <footer class="footer">© <span id="year"></span> kiry</footer>
 </main>
